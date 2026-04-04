@@ -555,7 +555,7 @@ serve(async (req) => {
     }
 
     // Get the dashboard URL from environment or use default
-    const dashboardUrl = Deno.env.get('DASHBOARD_URL') || 'https://carekaro.lovable.app';
+    const dashboardUrl = Deno.env.get('DASHBOARD_URL') || 'https://dream-weave-studio-84.vercel.app';
 
     const html = getEmailTemplate(type, data, dashboardUrl);
     const subject = getEmailSubject(type, data);

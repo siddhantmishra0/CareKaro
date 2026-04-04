@@ -125,7 +125,7 @@ async function sendAdminAlerts(
 
       // Send the email
       const emailResult = await resend.emails.send({
-        from: "CareKaro Security <security@carekaro.lovable.app>",
+        from: "CareKaro Security <security@carekaro.app>",
         to: [adminEmail],
         subject: `🚨 ${severity.toUpperCase()} Security Alert: ${patternLabel}`,
         html: `
@@ -474,7 +474,7 @@ serve(async (req) => {
     // Send email alerts to admins for critical and high severity activities
     if (threshold.severity === "critical" || threshold.severity === "high") {
       console.log(`Sending admin alerts for ${threshold.severity} suspicious activity: ${patternType}`);
-      const dashboardUrl = "https://carekaro.lovable.app";
+      const dashboardUrl = "https://dream-weave-studio-84.vercel.app";
       
       await sendAdminAlerts(
         supabase,

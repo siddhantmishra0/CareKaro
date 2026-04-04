@@ -13,7 +13,7 @@ const EmailVerification = () => {
     setIsResending(true);
     
     try {
-      // TODO: Implement actual resend verification email logic when Lovable Cloud is enabled
+      // TODO: Implement actual resend verification email logic
       await new Promise((resolve) => setTimeout(resolve, 1500));
       
       toast({

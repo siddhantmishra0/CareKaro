@@ -162,7 +162,7 @@ const AddFamilyMember = () => {
                   <div className="flex flex-col items-center gap-4 animate-fade-in">
                     <div className="bg-white p-4 rounded-lg shadow-sm">
                       <QRCodeSVG 
-                        value={`https://carekaro.lovable.app/family/join?code=${inviteCode.code}`}
+                        value={`https://dream-weave-studio-84.vercel.app/family/join?code=${inviteCode.code}`}
                         size={160}
                         level="H"
                         includeMargin={false}
@@ -215,13 +215,13 @@ const AddFamilyMember = () => {
                 <p className="text-sm font-medium mb-2">Share invite link</p>
                 <div className="flex items-center gap-2">
                   <div className="flex-1 p-2 bg-background rounded border text-xs font-mono truncate text-muted-foreground">
-                    carekaro.lovable.app/family/join?code={inviteCode.code}
+                    dream-weave-studio-84.vercel.app/family/join?code={inviteCode.code}
                   </div>
                   <Button
                     variant="outline"
                     size="sm"
                     onClick={async () => {
-                      const link = `https://carekaro.lovable.app/family/join?code=${inviteCode.code}`;
+                      const link = `https://dream-weave-studio-84.vercel.app/family/join?code=${inviteCode.code}`;
                       await navigator.clipboard.writeText(link);
                       toast({
                         title: "Link Copied",
